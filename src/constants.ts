@@ -1,6 +1,10 @@
 import JSBI from 'jsbi'
+import {ChainId} from "@uniswap/sdk-core";
 
-export const FACTORY_ADDRESS = '0x1279aF64A33138792395B16832F9C0fa6F068FCa' // Tyche Factory on TestNet of EVMOS
+export const FACTORY_ADDRESS: {[key: number]: string} = {
+    [ChainId.EVMOS]: '0x1279aF64A33138792395B16832F9C0fa6F068FCa',
+    [ChainId.EVMOS_TESTNET]: '0x1279aF64A33138792395B16832F9C0fa6F068FCa'
+} // Tyche Factory on TestNet of EVMOS
 
 export const INIT_CODE_HASH = '0x2be903b0269b1a1dc2aab081cb7198ec282d010df1d848f2e8d54ee4ceda4eba'
 

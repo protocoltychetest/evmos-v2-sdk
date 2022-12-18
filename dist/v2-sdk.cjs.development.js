@@ -10,7 +10,8 @@ var invariant = _interopDefault(require('tiny-invariant'));
 var solidity = require('@ethersproject/solidity');
 var address = require('@ethersproject/address');
 
-var FACTORY_ADDRESS = '0x1279aF64A33138792395B16832F9C0fa6F068FCa'; // Tyche Factory on TestNet of EVMOS
+var _FACTORY_ADDRESS;
+var FACTORY_ADDRESS = (_FACTORY_ADDRESS = {}, _FACTORY_ADDRESS[sdkCore.ChainId.EVMOS] = '0x1279aF64A33138792395B16832F9C0fa6F068FCa', _FACTORY_ADDRESS[sdkCore.ChainId.EVMOS_TESTNET] = '0x1279aF64A33138792395B16832F9C0fa6F068FCa', _FACTORY_ADDRESS); // Tyche Factory on TestNet of EVMOS
 
 var INIT_CODE_HASH = '0x2be903b0269b1a1dc2aab081cb7198ec282d010df1d848f2e8d54ee4ceda4eba';
 var MINIMUM_LIQUIDITY = /*#__PURE__*/JSBI.BigInt(1000); // exports for internal consumption
@@ -242,7 +243,7 @@ var Pair = /*#__PURE__*/function () {
 
   Pair.getAddress = function getAddress(tokenA, tokenB) {
     return computePairAddress({
-      factoryAddress: FACTORY_ADDRESS,
+      factoryAddress: FACTORY_ADDRESS[tokenA.chainId],
       tokenA: tokenA,
       tokenB: tokenB
     });
