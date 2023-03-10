@@ -2,7 +2,7 @@ import JSBI from 'jsbi'
 import {ChainId} from "@uniswap/sdk-core";
 
 export const FACTORY_ADDRESS: {[key: number]: string} = {
-    [ChainId.EVMOS]: '0x1279aF64A33138792395B16832F9C0fa6F068FCa',
+    // [ChainId.EVMOS]: '0x1279aF64A33138792395B16832F9C0fa6F068FCa',
     [ChainId.EVMOS_TESTNET]: '0x1279aF64A33138792395B16832F9C0fa6F068FCa'
 } // Tyche Factory on TestNet of EVMOS
 
