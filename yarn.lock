@@ -1533,8 +1533,8 @@
     tsutils "^3.17.1"
 
 "@uniswap/sdk-core@protocoltychetest/evmos-sdk":
-  version "3.0.0-alpha.4"
-  resolved "https://codeload.github.com/protocoltychetest/evmos-sdk/tar.gz/e793092f47b657964b7e5f9921bb8842ec05dee2"
+  version "3.0.0-alpha.7"
+  resolved "https://codeload.github.com/protocoltychetest/evmos-sdk/tar.gz/fcd5452bde5eae52b85ce15ae66b7f4707776861"
   dependencies:
     "@ethersproject/address" "^5.0.2"
     big.js "^5.2.2"
