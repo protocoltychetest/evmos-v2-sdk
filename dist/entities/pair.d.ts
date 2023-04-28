@@ -5,7 +5,7 @@ export declare const computePairAddress: ({ factoryAddress, tokenA, tokenB }: {
     tokenB: Token;
 }) => string;
 export declare class Pair {
-    readonly liquidityToken: Token;
+    liquidityToken: Token;
     private readonly tokenAmounts;
     static getAddress(tokenA: Token, tokenB: Token): string;
     constructor(currencyAmountA: CurrencyAmount<Token>, tokenAmountB: CurrencyAmount<Token>);

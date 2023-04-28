@@ -24,7 +24,7 @@ export const computePairAddress = ({
   )
 }
 export class Pair {
-  public readonly liquidityToken: Token
+  public liquidityToken: Token
   private readonly tokenAmounts: [CurrencyAmount<Token>, CurrencyAmount<Token>]
 
   public static getAddress(tokenA: Token, tokenB: Token): string {
