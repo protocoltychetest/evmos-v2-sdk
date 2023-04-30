@@ -1534,7 +1534,7 @@
 
 "@uniswap/sdk-core@protocoltychetest/evmos-sdk":
   version "3.0.0-alpha.7"
-  resolved "https://codeload.github.com/protocoltychetest/evmos-sdk/tar.gz/fcd5452bde5eae52b85ce15ae66b7f4707776861"
+  resolved "https://codeload.github.com/protocoltychetest/evmos-sdk/tar.gz/564c331b05300f6128510acdccf7235c09b2e6d2"
   dependencies:
     "@ethersproject/address" "^5.0.2"
     big.js "^5.2.2"
